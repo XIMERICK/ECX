@@ -57,7 +57,7 @@ public class ProductoService {
                 String proveedor = line[4];
                 String categoriaId = line[5];
 
-                Optional<Categoria> optionalCategoria = CategoriaService.getCategorias().stream() // Asumiendo que getCategorias() devuelve List<Categoria>
+                Optional<Categoria> optionalCategoria = categoriaService.getAll().stream() // Asumiendo que getCategorias() devuelve List<Categoria>
                         .filter(cat -> cat.getId().equals(categoriaId))
                         .findFirst();
 

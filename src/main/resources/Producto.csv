@@ -13,7 +13,7 @@ P011,cloro,16450,52,HigieneTotal S.A,Limpieza
 P012,desinfectante,9300,61,HigieneTotal S.A,Limpieza
 P013,esponjas,3000,98,HigieneTotal S.A,Limpieza
 P014,estropajos,3600,68,HigieneTotal S.A,Limpieza
-P015,desodorante,9800,27,HigieneTotal S.A,Higiene Personal
+P015,desodorante,9800,27,HigieneTotal S.A,HigienePersonal
 P016,carneRes,11250,12,EmbutidosLa Selva S.A,Carnes
 P017,carneCerdo,13650,100,EmbutidosLa Selva S.A,Carnes
 P018,pollo,15478,83,EmbutidosLa Selva S.A,Carnes
@@ -25,20 +25,20 @@ P024,queso,9645,88,EmbutidosLa Selva S.A,Lacteos
 P025,yogurt,7650,74,EmbutidosLa Selva S.A,Lacteos
 P026,mantequilla,6500,96,EmbutidosLa Selva S.A,Lacteos
 P027,lecheCondensada,3500,90,Distribuidora Central S.A.C,Lacteos
-P028,arroz,55640,60,Distribuidora Central S.A.C,Cereales y granos
-P029,frijoles,5600,77,Distribuidora Central S.A.C,Cereales y granos
-P030,harinaTrigo,2500,46,Distribuidora Central S.A.C,Cereales y granos
-P031,harinaMaiz,2600,15,Distribuidora Central S.A.C,Cereales y granos
-P032,espaguetis,9650,31,Distribuidora Central S.A.C,Cereales y granos
+P028,arroz,55640,60,Distribuidora Central S.A.C,CerealesGranos
+P029,frijoles,5600,77,Distribuidora Central S.A.C,CerealesGranos
+P030,harinaTrigo,2500,46,Distribuidora Central S.A.C,CerealesGranos
+P031,harinaMaiz,2600,15,Distribuidora Central S.A.C,CerealesGranos
+P032,espaguetis,9650,31,Distribuidora Central S.A.C,CerealesGranos
 P033,azucar,3450,30,Distribuidora Central S.A.C,Alimentos
 P034,sal,4600,79,Distribuidora Central S.A.C,Alimentos
 P035,atun,9850,45,Distribuidora Central S.A.C,Conservas
 P036,sardinas,650,39,Distribuidora Central S.A.C,Conservas
 P037,aceite,16540,93,Distribuidora Central S.A.C,Aceites y grasas
 P038,manteca,4698,77,Distribuidora Central S.A.C,Aceites y grasas
-P039,galletasSaldadas,16450,17,Distribuidora Central S.A.C,Snacks y galletas
-P040,galletasDulces,13460,40,Distribuidora Central S.A.C,Snacks y galletas
-P041,chocolate,9600,78,Distribuidora Central S.A.C,Snacks y galletas
+P039,galletasSaldadas,16450,17,Distribuidora Central S.A.C,SnacksGalletas
+P040,galletasDulces,13460,40,Distribuidora Central S.A.C,SnacksGalletas
+P041,chocolate,9600,78,Distribuidora Central S.A.C,SnacksGalletas
 P042,cafe,12540,91,Distribuidora Central S.A.C,Bebidas
 P043,aguaEmbotellada,2580,33,Distribuidora Central S.A.C,Bebidas
 P044,mayonesa,12540,14,Distribuidora Central S.A.C,Condimentos

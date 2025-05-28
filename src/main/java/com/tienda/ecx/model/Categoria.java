@@ -2,8 +2,17 @@ package com.tienda.ecx.model;
 
 public enum Categoria {
 
-    aseo,
-    carnicos,
-    lacteos,
-    abarrotes,
+    Alimentacion,
+    Higiene,
+    Limpieza,
+    HigienePersonal,
+    Carnes,
+    Lacteos,
+    CerealesGranos,
+    Alimentos,
+    Conservas,
+    AceitesGrasas,
+    SnacksGalletas,
+    Bebidas,
+    Condimentos,
 }
