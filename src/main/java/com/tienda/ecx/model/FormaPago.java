@@ -7,7 +7,7 @@ import lombok.Data;
 @AllArgsConstructor
 
 public class FormaPago {
-    public FormaPago(tipoPago efectivo, estadoPago pendiente) {
+    public FormaPago(TipoPago efectivo, estadoPago pendiente) {
 
     }
 
