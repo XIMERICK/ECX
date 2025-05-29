@@ -13,5 +13,8 @@ public class Producto {
     private int cantidad;
     private Proveedor proveedor;
     private Categoria categoria;
+
+    public Producto(String id, String nombre, double precio, int cantidad, String proveedor, Categoria categoria) {
+    }
 }
 

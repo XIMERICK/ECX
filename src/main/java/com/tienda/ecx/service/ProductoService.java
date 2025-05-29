@@ -14,7 +14,6 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
-import java.util.Optional;
 
 @Service
 @Getter
@@ -55,19 +54,21 @@ public class ProductoService {
                 double precio = Double.parseDouble(line[2]);
                 int cantidad = Integer.parseInt(line[3]);
                 String proveedor = line[4];
-                String categoriaId = line[5];
+                String categoriaIdString = line[5]; // Renombrado para claridad
 
-                Optional<Categoria> optionalCategoria = categoriaService.getAll().stream() // Asumiendo que getCategorias() devuelve List<Categoria>
-                        .filter(cat -> cat.getId().equals(categoriaId))
-                        .findFirst();
-
-                Categoria categoria = optionalCategoria.orElse(null);
-
-                if (categoria == null) {
-                    log.warn("Categoría con ID {} no encontrada para el producto {}. El producto se añadirá sin categoría.", categoriaId, nombre);
+                Categoria categoria = null; // Inicializamos a null
+                try {
+                    categoria = Categoria.valueOf(categoriaIdString); // Intentamos convertir el String a enum
+                } catch (IllegalArgumentException e) {
+                    log.warn("Categoría con nombre '{}' no encontrada en el enum para el producto {}. El producto se añadirá sin categoría.", categoriaIdString, nombre);
                 }
 
-                Producto producto = new Producto(id, nombre, precio, cantidad, proveedor, categoria);
+                if (categoria == null) {
+                    // Si llegamos aquí, es porque no se encontró la enumeración, el log ya lo avisó.
+                    // El producto se añadirá con 'categoria' como null.
+                }
+
+                Producto producto = new Producto(id, nombre, precio, cantidad, proveedor, categoria); // Asegúrate de que Producto acepte Categoria o null
 
                 productos.add(producto);
             }
@@ -75,5 +76,13 @@ public class ProductoService {
         } catch (Exception e) {
             log.error("Error al cargar productos desde el archivo CSV: {}", productoFilename, e);
         }
+    }
+
+    public List<Producto> getAll() {
+        return null;
+    }
+
+    public Producto add(Producto p) {
+        return p;
     }
 }

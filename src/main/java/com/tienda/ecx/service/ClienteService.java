@@ -26,7 +26,7 @@ public class ClienteService {
         this.locationService = locationService;
     }
 
-    @com.tienda.ecx.service.PostConstruct
+    @PostConstruct
     public void init() {
         clientes = new ArrayList<>();
         try (CSVReader reader = new CSVReader(new InputStreamReader(
@@ -53,6 +53,14 @@ public class ClienteService {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    public List<Cliente> getAll() {
+        return clientes;
+    }
+
+    public Cliente add(Cliente c) {
+        return c;
     }
 }
 
